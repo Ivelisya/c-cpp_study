@@ -1,0 +1,9 @@
+L = n*c - x
+head -> next
+meet -> next
+
+slow = L+x
+faster = L + x + N*c
+x = 在环上走的距离
+L = 到环的长度
+c = 环的周长
