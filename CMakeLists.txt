@@ -18,6 +18,8 @@
  add_executable(smzy
          cpp_study/day_50_海量数据处理面试题/test1.cpp
          cpp_study/day_49_bitmap_and_bloom_filters/BloomFilter.h
+         cpp_study/day_50_海量数据处理面试题/test2.cpp
+         cpp_study/day_50_海量数据处理面试题/test3.cpp
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
