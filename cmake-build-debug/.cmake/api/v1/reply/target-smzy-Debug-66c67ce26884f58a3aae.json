@@ -34,7 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 32,
+				"line" : 28,
 				"parent" : 0
 			}
 		]
@@ -71,10 +71,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				2,
-				3,
-				4
+				0
 			]
 		}
 	],
@@ -111,45 +108,12 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				2,
-				3,
-				4
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1
+				0
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_50_\u6d77\u91cf\u6570\u636e\u5904\u7406\u9762\u8bd5\u9898/test1.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "cpp_study/day_49_bitmap_and_bloom_filters/BloomFilter.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_50_\u6d77\u91cf\u6570\u636e\u5904\u7406\u9762\u8bd5\u9898/test2.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_50_\u6d77\u91cf\u6570\u636e\u5904\u7406\u9762\u8bd5\u9898/test3.cpp",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,

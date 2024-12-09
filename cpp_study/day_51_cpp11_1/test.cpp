@@ -1,6 +1,7 @@
 //
 // Created by 20212 on 24-12-10.
 //
+
 #include <iostream>
 #include <vector>
 #include <list>
@@ -8,6 +9,7 @@
 #include <map>
 #include <initializer_list>
 using namespace std;
+#if 0
 class Point
 {
 public:
@@ -32,4 +34,46 @@ int main()
     Point p1(1,2);
     Point p2{3,4};
     Point p3 = {5,6};
+
+    initializer_list<int> ilt2 = {1,2,3,4,5,6};
+    //容器是如何支持这种花括号里列表初始化的呢？
+    //容器内部提供了一个构造函数，接受一个initializer_list<T>对象
+    //vector (initializer_list<value_type> il,       const allocator_type& alloc = allocator_type());
+    //容器支持花括号列表初始化，本质是增加了一个构造函数，接受一个initializer_list<T>对象
+}
+#endif
+//类型推导 属于RTTI run time type identification
+
+#if 0
+int main()
+{
+    int a = 10;
+    double b = 20;
+
+    auto c = a + b;
+    // decltype(a + b)c;
+
+    //可以拿到类型名称
+    cout << typeid(c).name() << endl;
+
+    //假设我想定义一个变量，这个变量的类型和a+b的类型一样
+    decltype(c)d;//decltype 推出c的类型定义d 通过对象推导出类型
+}
+#endif
+
+//auto 和 范围for
+//熟悉
+int main()
+{
+    std::map<std::string,std::string> dict = {{"C","C Language"},{"C++","C++ Language"},{"Python","Python Language"}};
+    auto it = dict.begin();
+    for(;it != dict.end();it++)
+    {
+        cout << it->first << " : " << it->second << endl;
+    }
+    cout << "----------------" << endl;
+    for (auto &e : dict)//这里是自动推导出来的类型
+    {
+        cout << e.first << " : " << e.second << endl;
+    }
 }
