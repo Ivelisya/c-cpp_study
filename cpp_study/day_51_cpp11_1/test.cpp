@@ -63,6 +63,7 @@ int main()
 
 //auto 和 范围for
 //熟悉
+#if 0
 int main()
 {
     std::map<std::string,std::string> dict = {{"C","C Language"},{"C++","C++ Language"},{"Python","Python Language"}};
@@ -72,9 +73,13 @@ int main()
         cout << it->first << " : " << it->second << endl;
     }
     cout << "----------------" << endl;
-    for (auto &e : dict)//这里是自动推导出来的类型
+    for (auto &e : dict)//这里是自动推导出来的类型 auto的优势就是可以把在类型比较复杂的地方，可以简化代码
     {
         cout << e.first << " : " << e.second << endl;
     }
+    //范围for 当容器中对象比较大，或者这个对象要做深拷贝,如string
+    //最好给&和const,可以减少拷贝提高效率
     //auto 不能作为形参 和 返回值
 }
+#endif
+
