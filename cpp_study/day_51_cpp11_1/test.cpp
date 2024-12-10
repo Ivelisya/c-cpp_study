@@ -8,6 +8,7 @@
 #include <string>
 #include <map>
 #include <initializer_list>
+#include <string.h>
 using namespace std;
 #if 0
 class Point
@@ -117,6 +118,10 @@ int main()
 
 //要求a的对象不能拷贝和赋值(防拷贝)
 //c++98 只声明不实现，这样就没办法用(拷贝对象) 缺陷 别人可以在类外实现
+//为了解决这个问题 只声明不实现 + private
+
+//c++11 加入 delete关键字
+#if 0
 class A
 {
 public:
@@ -133,4 +138,87 @@ int main()
     A a1;//无法通过编译 缺少默认构造函数 因为拷贝构造也是默认构造函数
     return 0;
 }
+#endif
+//右值引用 重点
+//从c++98 就提出了 引用的概率 引用就是取别名 c++98左值引用 c++11右值引用
+#if 0
+int main()
+//不管是左值引用还是右值引用，都是引用，都是取别名
+//不过左值引用主要给左值取别名，右值引用 主要给右值取别名
+//什么是左值 什么是右值 注意这个是一个c语言就留下来的坑 就像左移右移一样,这里的左右不是方向
+//左值:变量 右值：常量 临时变量
 
+{
+    //
+    int a = 0;
+    int &b = a;//左值引用 b是a的别名
+    //右值引用
+    int x = 1,y = 2;
+    int && c = 10;
+    int && d = x + y;
+
+    // int &e = 10;//错误 10是一个常量，常量是右值 左值引用不能绑定右值，但是const左值引用可以绑定右值
+    // const int &e = 10;
+
+    // int && e = a;//错误 a是一个左值 右值引用不能绑定左值 & 为左值引用 && 为右值引用
+    return 0;
+    //右值引用需要移动
+    int && e = move(a);//move是一个模板函数，将左值转换成右值
+    //右值引用是给常量取别名
+}
+
+//c++11 又将右值区分为纯右值和将亡值
+//纯右值:基本类型的常量或者临时对象
+//将亡值:自定义类型的临时对象
+#endif
+
+#if 0
+template<class T>
+void f(const T &t)
+{
+    cout << "左值引用" << endl;
+}
+template<class T>
+void f(T &&t)
+{
+    cout << "右值引用" << endl;
+}
+int main()
+{
+    int x = 10;
+    f(x);//这里会匹配左值引用的f
+    f(10);//这里会匹配右值引用的f
+}
+#endif
+
+class String
+{
+public:
+    String(const char* str = "")
+    {
+        _str = new char[strlen(str) + 1]
+        strcpy(_str,str);
+    }
+
+    String(const String &s)
+    {
+        _str = new char[strlen(s._str) + 1];
+        strcpy(_str,s._str);
+    }
+
+    ~String()
+    {
+        delete[] _str;
+    }
+private:
+    char* _str;
+};
+
+
+int main()
+{
+    String s1("hello word");
+    String s2(s1);//参数是左值，调用左值引用的构造函数
+    String s3(String("临时对象-右值"));//参数是右值，调用右值引用的构造函数
+    return 0;
+}
