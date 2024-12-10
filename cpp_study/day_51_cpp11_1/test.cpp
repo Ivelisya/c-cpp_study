@@ -206,6 +206,11 @@ public:
         strcpy(_str,s._str);
     }
 
+    String(String &&s):_str(nullptr)
+    {
+        //移动拷贝 代价小 效率高
+        swap(_str,.s._str);
+    }
     ~String()
     {
         delete[] _str;
@@ -219,6 +224,6 @@ int main()
 {
     String s1("hello word");
     String s2(s1);//参数是左值，调用左值引用的构造函数
-    String s3(String("临时对象-右值"));//参数是右值，调用右值引用的构造函数
+    String s3(String("临时对象-右值"));//参数是右值，调用右值引用的构造函数 这个右值是将亡值
     return 0;
 }
