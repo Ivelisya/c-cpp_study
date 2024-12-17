@@ -1,11 +1,11 @@
-#include <iostream>
-#include <unordered_map>
-#include <unordered_set>
-#include <set>
-#include <string>
-#include <vector>
 #include <chrono>
 #include <cstdlib>
+#include <iostream>
+#include <set>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 
 void test_unordered_map_set()
 {
@@ -18,9 +18,7 @@ void test_unordered_map_set()
     std::cout << std::endl;
 
     std::unordered_map<std::string, std::string> dict = {
-        {"sort", "排序"},
-        {"string", "字符串"},
-        {"left", "左边"}};
+        {"sort", "排序"}, {"string", "字符串"}, {"left", "左边"}};
 
     for (const auto &pair : dict)
     {
@@ -45,20 +43,25 @@ void test_op()
     std::unordered_set<int> us(v.begin(), v.end());
     auto end1 = std::chrono::high_resolution_clock::now();
     std::cout << "unordered_set: "
-              << std::chrono::duration_cast<std::chrono::milliseconds>(end1 - start1).count()
+              << std::chrono::duration_cast<std::chrono::milliseconds>(end1 -
+                                                                       start1)
+                     .count()
               << " ms" << std::endl;
 
     auto start2 = std::chrono::high_resolution_clock::now();
     std::set<int> s(v.begin(), v.end());
     auto end2 = std::chrono::high_resolution_clock::now();
     std::cout << "set: "
-              << std::chrono::duration_cast<std::chrono::milliseconds>(end2 - start2).count()
+              << std::chrono::duration_cast<std::chrono::milliseconds>(end2 -
+                                                                       start2)
+                     .count()
               << " ms" << std::endl;
 }
 
 int main()
 {
     // test_unordered_map_set();
+
     test_op();
     return 0;
 }

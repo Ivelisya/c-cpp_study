@@ -2,13 +2,14 @@
 // Created by 20212 on 24-12-10.
 //
 
-#include <iostream>
-#include <vector>
-#include <list>
-#include <string>
-#include <map>
-#include <initializer_list>
 #include <string.h>
+
+#include <initializer_list>
+#include <iostream>
+#include <list>
+#include <map>
+#include <string>
+#include <vector>
 using namespace std;
 #if 0
 class Point
@@ -43,7 +44,7 @@ int main()
     //容器支持花括号列表初始化，本质是增加了一个构造函数，接受一个initializer_list<T>对象
 }
 #endif
-//类型推导 属于RTTI run time type identification
+// 类型推导 属于RTTI run time type identification
 
 #if 0
 int main()
@@ -62,8 +63,8 @@ int main()
 }
 #endif
 
-//auto 和 范围for
-//熟悉
+// auto 和 范围for
+// 熟悉
 #if 0
 int main()
 {
@@ -86,41 +87,43 @@ int main()
 }
 #endif
 
-//除了stl的容器可以使用范围for用法，数组也可以(原生指针可以认为是天然的迭代器) 比如 vector string 的迭代器就是原生指针。
+// 除了stl的容器可以使用范围for用法，数组也可以(原生指针可以认为是天然的迭代器)
+// 比如 vector string 的迭代器就是原生指针。
 
-//final 和 override 关键字
-//final 修饰的类不能被继承 修饰的虚函数不能被重写
-//override 修饰的虚函数必须是重写基类的虚函数 作为重写之后的标记
+// final 和 override 关键字
+// final 修饰的类不能被继承 修饰的虚函数不能被重写
+// override 修饰的虚函数必须是重写基类的虚函数 作为重写之后的标记
 
-//final 修饰类 类就变成最终类 不能被继承
-//override 是子类重写函数，检查是否完成重写。不满足重写的条件，则会报错
+// final 修饰类 类就变成最终类 不能被继承
+// override 是子类重写函数，检查是否完成重写。不满足重写的条件，则会报错
 
-//智能指针(熟悉)
+// 智能指针(熟悉)
 
-//新容器
-//c++98容器
-//string/vector/list/map/set + stack/queue/priority_queue
-//c++11容器
-//array(定长数组)/forward_list(单链表)/unordered_map/unordered_set/multimap/multiset
+// 新容器
+// c++98容器
+// string/vector/list/map/set + stack/queue/priority_queue
+// c++11容器
+// array(定长数组)/forward_list(单链表)/unordered_map/unordered_set/multimap/multiset
 #include <array>
-//array(定长数组): 实际用的很少，缺点：定长+存储的空间一般在栈上，栈上的空间有限
-//forward_list 单链表 不能尾插，只能头插 不能尾删，只能头删
-//unordered_map/unordered_set:推荐使用，因为他们的效率高于map/set
-// int main()
-// {
-//     array<int,100> a;
-//     return 0;
-// }
-//右值引用
+// array(定长数组):
+// 实际用的很少，缺点：定长+存储的空间一般在栈上，栈上的空间有限 forward_list
+// 单链表 不能尾插，只能头插 不能尾删，只能头删
+// unordered_map/unordered_set:推荐使用，因为他们的效率高于map/set
+//  int main()
+//  {
+//      array<int,100> a;
+//      return 0;
+//  }
+// 右值引用
 
-//默认成员函数控制
-//1.显式缺省成员函数
+// 默认成员函数控制
+// 1.显式缺省成员函数
 
-//要求a的对象不能拷贝和赋值(防拷贝)
-//c++98 只声明不实现，这样就没办法用(拷贝对象) 缺陷 别人可以在类外实现
-//为了解决这个问题 只声明不实现 + private
+// 要求a的对象不能拷贝和赋值(防拷贝)
+// c++98 只声明不实现，这样就没办法用(拷贝对象) 缺陷 别人可以在类外实现
+// 为了解决这个问题 只声明不实现 + private
 
-//c++11 加入 delete关键字
+// c++11 加入 delete关键字
 #if 0
 class A
 {
@@ -139,8 +142,8 @@ int main()
     return 0;
 }
 #endif
-//右值引用 重点
-//从c++98 就提出了 引用的概率 引用就是取别名 c++98左值引用 c++11右值引用
+// 右值引用 重点
+// 从c++98 就提出了 引用的概率 引用就是取别名 c++98左值引用 c++11右值引用
 #if 0
 int main()
 //不管是左值引用还是右值引用，都是引用，都是取别名
@@ -194,36 +197,41 @@ int main()
 class String
 {
 public:
-    String(const char* str = "")
+    String(const char *str = "")
     {
-        _str = new char[strlen(str) + 1]
-        strcpy(_str,str);
+        _str = new char[strlen(str) + 1];
+        strcpy(_str, str);
     }
 
     String(const String &s)
     {
         _str = new char[strlen(s._str) + 1];
-        strcpy(_str,s._str);
+        strcpy(_str, s._str);
     }
 
-    String(String &&s):_str(nullptr)
+    //右值:将亡值
+    String(String &&s): _str(nullptr)
     {
         //移动拷贝 代价小 效率高
-        swap(_str,.s._str);
+        //传过来的是一个将亡值，将亡值是一个临时对象，临时对象的生命周期即将结束
+        //将亡值的生命周期即将结束，我们可以将其资源移动过来
+        swap(_str, s._str);
     }
+
     ~String()
     {
         delete[] _str;
     }
+
 private:
-    char* _str;
+    char *_str;
 };
 
 
 int main()
 {
     String s1("hello word");
-    String s2(s1);//参数是左值，调用左值引用的构造函数
-    String s3(String("临时对象-右值"));//参数是右值，调用右值引用的构造函数 这个右值是将亡值
+    String s2(s1); //参数是左值，调用左值引用的构造函数
+    String s3(String("临时对象-右值")); //参数是右值，调用右值引用的构造函数 这个右值是将亡值
     return 0;
 }
