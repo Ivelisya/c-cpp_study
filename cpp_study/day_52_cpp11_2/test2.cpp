@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <string>
+
 using namespace std;
 class String
 {
@@ -89,9 +90,14 @@ private:
 };
 int main()
 {
-
     String s1("s1");
     String s2("s2");
     String s3 = s1 + s2;  // s1.operator+(s2)
     return 0;
 }
+
+// 结论右值引用本身没有很大的意义,右值引用实现移动拷贝和移动赋值
+// 那么面对接收函数参数传值返回参数时,可以提高效率
+
+// 左值引用进行深拷贝
+// 右值引用进行移动拷贝

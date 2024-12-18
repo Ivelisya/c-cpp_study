@@ -47,11 +47,13 @@ IndentCaseLabels: true
 IndentPPDirectives: BeforeHash
 IndentWidth: 4
 IndentWrappedFunctionNames: true
+MaxEmptyLinesToKeep: 1
 NamespaceIndentation: All
 PointerAlignment: Right
 QualifierAlignment: Left
 ReferenceAlignment: Right
 ReflowComments: true
+SeparateDefinitionBlocks: Always
 SortIncludes: true
 SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
@@ -60,8 +62,6 @@ SpaceAfterTemplateKeyword: true
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: ControlStatements
 SpaceInEmptyParentheses: false
-
-IncludeIsMainRegex: "([-_](test|unittest))?$"
 SpacesBeforeTrailingComments: 2
 SpacesInAngles: false
 SpacesInCStyleCastParentheses: false
