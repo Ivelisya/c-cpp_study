@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test.cpp
+string.h
+-
+initializer_list
+-
+iostream
+-
+list
+-
+map
+-
+string
+-
+vector
+-
+array
+-
+

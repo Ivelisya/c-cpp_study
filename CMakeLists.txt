@@ -17,6 +17,7 @@
  # 定义可执行目标
  add_executable(smzy
          cpp_study/day_52_cpp11_2/test.cpp
+         cpp_study/day_52_cpp11_2/test2.cpp
 
  )
  # 为目标设置包含目录

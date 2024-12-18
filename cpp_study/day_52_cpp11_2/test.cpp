@@ -3,8 +3,6 @@
 //
 
 #include <string.h>
-
-#include <initializer_list>
 #include <iostream>
 #include <list>
 #include <map>
@@ -249,11 +247,17 @@ public:
         delete[] _str;
     }
 
+    string f(const char * str)
+    {
+        string tmp(str);
+        return tmp;
+        //返回的是一个将亡值
+    }
 private:
     char *_str;
 };
 
-
+//所有深拷贝类，都可以通过移动构造和移动赋值来提高效率
 int main()
 {
     String s1("hello word");
@@ -266,3 +270,5 @@ int main()
 
     return 0;
 }
+
+//c/c++ 是一个极度追求效率的语言
