@@ -1,12 +1,6 @@
 [
 {
   "directory": "C:/Users/20212/Desktop/Github/c-cpp_study/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_52_cpp11_2\\test.cpp.obj -c C:\\Users\\20212\\Desktop\\Github\\c-cpp_study\\cpp_study\\day_52_cpp11_2\\test.cpp",
-  "file": "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test.cpp",
-  "output": "CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj"
-},
-{
-  "directory": "C:/Users/20212/Desktop/Github/c-cpp_study/build",
   "command": "D:\\mingw64\\bin\\g++.exe   -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_52_cpp11_2\\test2.cpp.obj -c C:\\Users\\20212\\Desktop\\Github\\c-cpp_study\\cpp_study\\day_52_cpp11_2\\test2.cpp",
   "file": "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test2.cpp",
   "output": "CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.obj"

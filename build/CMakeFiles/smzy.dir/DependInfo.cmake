@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test.cpp" "CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj.d"
   "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test2.cpp" "CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.obj.d"
   )
 

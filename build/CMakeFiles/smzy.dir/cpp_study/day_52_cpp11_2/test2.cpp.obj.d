@@ -1,5 +1,5 @@
-CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
- C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_52_cpp11_2\test.cpp \
+CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.obj: \
+ C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_52_cpp11_2\test2.cpp \
  D:/mingw64/x86_64-w64-mingw32/include/string.h \
  D:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  D:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
@@ -134,22 +134,4 @@ CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/istream \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/list \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_list.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/allocated_ptr.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/aligned_buffer.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/list.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/map \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_tree.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/node_handle.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_map.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_multimap.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/erase_if.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/vector \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_uninitialized.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_vector.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_bvector.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/vector.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/array \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/compare
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc
