@@ -1,5 +1,4 @@
 #include <chrono>
-#include <cstdlib>
 #include <iostream>
 #include <set>
 #include <string>
@@ -29,16 +28,7 @@ void test_unordered_map_set()
 
 void test_op()
 {
-    const size_t n = 1000000;
     std::vector<int> v;
-    v.reserve(n);
-    srand(static_cast<unsigned>(time(nullptr)));
-
-    for (size_t i = 0; i < n; ++i)
-    {
-        v.push_back(rand());
-    }
-
     auto start1 = std::chrono::high_resolution_clock::now();
     std::unordered_set<int> us(v.begin(), v.end());
     auto end1 = std::chrono::high_resolution_clock::now();
