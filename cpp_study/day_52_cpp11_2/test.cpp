@@ -199,12 +199,15 @@ class String
 public:
     String(const char *str = "")
     {
+        cout << "String(const char *str) - 普通构造" << endl;
         _str = new char[strlen(str) + 1];
         strcpy(_str, str);
+
     }
 
     String(const String &s)
     {
+        cout << "String(const String &s) - 拷贝构造" << endl;
         _str = new char[strlen(s._str) + 1];
         strcpy(_str, s._str);
     }
@@ -212,6 +215,7 @@ public:
     //右值:将亡值
     String(String &&s): _str(nullptr)
     {
+        cout << "String(String &&s) - 移动构造" << endl;
         //移动拷贝 代价小 效率高
         //传过来的是一个将亡值，将亡值是一个临时对象，临时对象的生命周期即将结束
         //将亡值的生命周期即将结束，我们可以将其资源移动过来
@@ -220,6 +224,7 @@ public:
 
     String& operator=(const String& s)
     {
+        cout << "String& operator=(const String& s) - 拷贝赋值" << endl;
         if (this != &s)//如果不是自己给自己赋值
         {
             char* newstr = new char[strlen(s._str) + 1];
@@ -228,6 +233,16 @@ public:
             delete[] _str;
             _str = newstr;
         }
+    }
+//传入将亡值 - 进行移动拷贝
+    String& operator=(String&& s)
+    {
+        cout << "String& operator=(String&& s) - 移动赋值" << endl;
+        if (this != &s)
+        {
+            swap(_str,s._str);
+        }
+        return *this;
     }
     ~String()
     {
@@ -245,5 +260,9 @@ int main()
     String s2(s1); //参数是左值，调用左值引用的构造函数
     String s3(String("临时对象-右值")); //参数是右值，调用右值引用的构造函数 这个右值是将亡值
     String s4(move(s1));//move是一个模板函数，将左值转换成右值 左值是可以取地址的，右值是不能取地址的
+    String s5("左值");
+    s5 = s1;//左值赋值
+    s5 = String("右值");//右值赋值
+
     return 0;
 }
