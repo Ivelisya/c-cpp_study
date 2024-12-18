@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test.cpp">
-			<Option target="smzy"/>
-		</Unit>
 		<Unit filename="C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test2.cpp">
 			<Option target="smzy"/>
 		</Unit>
