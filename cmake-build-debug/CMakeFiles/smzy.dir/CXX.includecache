@@ -6,21 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test.cpp
-string.h
+C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_52_cpp11_2/test3.cpp
+algorithm
 -
-initializer_list
+functional
 -
 iostream
 -
-list
--
-map
--
 string
--
-vector
--
-array
 -
 

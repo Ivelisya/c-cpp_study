@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_52_cpp11_2/test2.obj: cpp_study/day_52_cpp11_2/test2.cpp.obj
-.PHONY : cpp_study/day_52_cpp11_2/test2.obj
+cpp_study/day_52_cpp11_2/test3.obj: cpp_study/day_52_cpp11_2/test3.cpp.obj
+.PHONY : cpp_study/day_52_cpp11_2/test3.obj
 
 # target to build an object file
-cpp_study/day_52_cpp11_2/test2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.obj
-.PHONY : cpp_study/day_52_cpp11_2/test2.cpp.obj
+cpp_study/day_52_cpp11_2/test3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test3.cpp.obj
+.PHONY : cpp_study/day_52_cpp11_2/test3.cpp.obj
 
-cpp_study/day_52_cpp11_2/test2.i: cpp_study/day_52_cpp11_2/test2.cpp.i
-.PHONY : cpp_study/day_52_cpp11_2/test2.i
+cpp_study/day_52_cpp11_2/test3.i: cpp_study/day_52_cpp11_2/test3.cpp.i
+.PHONY : cpp_study/day_52_cpp11_2/test3.i
 
 # target to preprocess a source file
-cpp_study/day_52_cpp11_2/test2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.i
-.PHONY : cpp_study/day_52_cpp11_2/test2.cpp.i
+cpp_study/day_52_cpp11_2/test3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test3.cpp.i
+.PHONY : cpp_study/day_52_cpp11_2/test3.cpp.i
 
-cpp_study/day_52_cpp11_2/test2.s: cpp_study/day_52_cpp11_2/test2.cpp.s
-.PHONY : cpp_study/day_52_cpp11_2/test2.s
+cpp_study/day_52_cpp11_2/test3.s: cpp_study/day_52_cpp11_2/test3.cpp.s
+.PHONY : cpp_study/day_52_cpp11_2/test3.s
 
 # target to generate assembly for a file
-cpp_study/day_52_cpp11_2/test2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test2.cpp.s
-.PHONY : cpp_study/day_52_cpp11_2/test2.cpp.s
+cpp_study/day_52_cpp11_2/test3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test3.cpp.s
+.PHONY : cpp_study/day_52_cpp11_2/test3.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_52_cpp11_2/test2.obj
-	@echo ... cpp_study/day_52_cpp11_2/test2.i
-	@echo ... cpp_study/day_52_cpp11_2/test2.s
+	@echo ... cpp_study/day_52_cpp11_2/test3.obj
+	@echo ... cpp_study/day_52_cpp11_2/test3.i
+	@echo ... cpp_study/day_52_cpp11_2/test3.s
 .PHONY : help
 
 
