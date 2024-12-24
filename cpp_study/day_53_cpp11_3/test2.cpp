@@ -9,26 +9,51 @@
 using namespace std;
 #include <thread>
 #include <mutex>
-mutex mtx;
-int x = 0;
+#include <atomic>
+// mutex mtx;
+// // int x = 0;
+// atomic<int> x = 0; //支持整形的原子操作
+// void Add(int n)
+// {
+//     // mtx.lock();
+//     for (int i = 0; i < n; ++i)
+//     {
+//         ++x;
+//     }
+//     // mtx.unlock();
+// }
+//
+//
+// int main()
+// {
+//     thread t1(Add, 10);
+//     thread t2(Add, 10);
+//     t1.join();
+//     t2.join();
+//     cout << x << endl;
+// }
+atomic<int> x = 0;
 
-void Add(int n)
+struct Add
 {
-    mtx.lock();
-    for (int i = 0; i < n; ++i)
+    void operator()(int n)
     {
-        ++x;
+        for (int i = 0; i < n; ++i)
+        {
+            ++x;
+        }
     }
-    mtx.unlock();
-}
-
+};
 
 int main()
 {
-    int n = 0;
-    thread t1(Add, 10);
-    thread t2(Add, 10);
+    Add add;
+    thread t1(add, 10);
+    thread t2(add, 10);
+
     t1.join();
     t2.join();
+
     cout << x << endl;
+    return 0;
 }
