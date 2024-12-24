@@ -6,7 +6,7 @@ using namespace std;
 // 1.掌握lambda表达式写的格式
 // 2.lambda表达式的使用场景 (对比仿函数 函数指针)
 // 3.lambda表达式的原理
-
+#if 0
 int main()
 {
     //[捕获外部变量](参数列表) mutable(可选) -> 返回类型 {函数体}
@@ -45,5 +45,17 @@ int main()
 */
     return 0;
 }
+#endif
 
 // 匿名函数对象不同作用域可以同名 ::是全局作用域
+
+int main()
+{
+    int a = 1, b = 2;
+    //对象 = 对象（编译器生成的lambda_uuid仿函数的对象）（参数）;
+    auto add = [](int x, int y) -> int { return x + y; };
+    //add底层还是依靠仿函数实现，也就是说你定义了一个lambda表达式
+    //实际上编译器会生成一个叫 lambda_uuid的类，仿函数operator()的参数和实现
+    //就是我们写的lambda表达式的参数和实现
+    add(1, 20);//call lambda_uuid::operator()(1, 20)
+}
