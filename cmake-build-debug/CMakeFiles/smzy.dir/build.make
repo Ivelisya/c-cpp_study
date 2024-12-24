@@ -65,27 +65,27 @@ include CMakeFiles/smzy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/smzy.dir/flags.make
 
-CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.obj: C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_53_cpp11_3/test2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\Github\c-cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.obj"
-	"D:\Program Files\JetBrains\CLion 2024.3.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\smzy.dir\cpp_study\day_53_cpp11_3\test2.cpp.obj -c C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_53_cpp11_3\test2.cpp
+CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.obj: C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_53_cpp11_3/test3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\Github\c-cpp_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.obj"
+	"D:\Program Files\JetBrains\CLion 2024.3.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\smzy.dir\cpp_study\day_53_cpp11_3\test3.cpp.obj -c C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_53_cpp11_3\test3.cpp
 
-CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.i"
-	"D:\Program Files\JetBrains\CLion 2024.3.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_53_cpp11_3\test2.cpp > CMakeFiles\smzy.dir\cpp_study\day_53_cpp11_3\test2.cpp.i
+CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.i"
+	"D:\Program Files\JetBrains\CLion 2024.3.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_53_cpp11_3\test3.cpp > CMakeFiles\smzy.dir\cpp_study\day_53_cpp11_3\test3.cpp.i
 
-CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.s"
-	"D:\Program Files\JetBrains\CLion 2024.3.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_53_cpp11_3\test2.cpp -o CMakeFiles\smzy.dir\cpp_study\day_53_cpp11_3\test2.cpp.s
+CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.s"
+	"D:\Program Files\JetBrains\CLion 2024.3.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_53_cpp11_3\test3.cpp -o CMakeFiles\smzy.dir\cpp_study\day_53_cpp11_3\test3.cpp.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.obj"
+"CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test2.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_53_cpp11_3/test3.cpp.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp

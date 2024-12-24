@@ -53,7 +53,10 @@ int main()
 
     t1.join();
     t2.join();
+    cout << t1.get_id() << endl;
+    cout << t2.get_id() << endl;
 
     cout << x << endl;
+
     return 0;
 }
