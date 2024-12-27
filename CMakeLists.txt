@@ -1,28 +1,28 @@
  cmake_minimum_required(VERSION 3.20)
 
- # è®¾ç½®é¡¹ç›®åç§°å¹¶æŒ‡å®šä½¿ç”¨çš„è¯­è¨€
+ # ÉèÖÃÏîÄ¿Ãû³Æ²¢Ö¸¶¨Ê¹ÓÃµÄÓïÑÔ
  project(smzy_study LANGUAGES C CXX)
 
- # è®¾ç½® C å’Œ C++ æ ‡å‡†
+ # ÉèÖÃ C ºÍ C++ ±ê×¼
  set(CMAKE_C_STANDARD 11)
  set(CMAKE_CXX_STANDARD 17)
 
- # å¼ºåˆ¶ä½¿ç”¨æŒ‡å®šçš„æ ‡å‡†å¹¶ç¦ç”¨ç¼–è¯‘å™¨æ‰©å±•ä»¥æé«˜å¯ç§»æ¤æ€§
+ # Ç¿ÖÆÊ¹ÓÃÖ¸¶¨µÄ±ê×¼²¢½ûÓÃ±àÒëÆ÷À©Õ¹ÒÔÌá¸ß¿ÉÒÆÖ²ĞÔ
  set(CMAKE_C_STANDARD_REQUIRED ON)
 
  set(CMAKE_CXX_STANDARD_REQUIRED ON)
  set(CMAKE_C_EXTENSIONS OFF)
  set(CMAKE_CXX_EXTENSIONS OFF)
 
- # å®šä¹‰å¯æ‰§è¡Œç›®æ ‡
+ # ¶¨Òå¿ÉÖ´ĞĞÄ¿±ê
  add_executable(smzy
-         cpp_study/day_53_cpp11_3/test3.cpp
-
+#         cpp_study/day_53_cpp11_3/test3.cpp
+         cpp_study/day_54_cpp11_4/test1.cpp
  )
- # ä¸ºç›®æ ‡è®¾ç½®åŒ…å«ç›®å½•
+ # ÎªÄ¿±êÉèÖÃ°üº¬Ä¿Â¼
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
- # å¯é€‰ï¼šä¸ºæé«˜ä»£ç è´¨é‡æ·»åŠ ç¼–è¯‘å™¨è­¦å‘Š
+ # ¿ÉÑ¡£ºÎªÌá¸ß´úÂëÖÊÁ¿Ìí¼Ó±àÒëÆ÷¾¯¸æ
  if (MSVC)
      target_compile_options(smzy PRIVATE /W4)
  else()
