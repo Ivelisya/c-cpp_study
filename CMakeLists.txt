@@ -16,8 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-#         cpp_study/day_53_cpp11_3/test3.cpp
-         cpp_study/day_54_cpp11_4/test1.cpp
+         cpp_study/day_55/c++11.cpp
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
