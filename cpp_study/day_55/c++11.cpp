@@ -3,10 +3,6 @@
 //
 // 异常
 
-#include <exception>
-#include <iostream>
-#include <vector>
-using namespace std;
 // 异常是一种面向对象语言处理错误的一种方式
 // c语言传统的处理错误的方式有哪些呢
 // 1.返回错误码 很多api接口都是把错误码放到errno中
@@ -53,9 +49,53 @@ using namespace std;
 // 公司一般会给一个基类
 // 要求你可以自己抛你自己定义的异常，但是必须继承公司给的基类
 // 这样的话，外层捕获只需要捕获公司给的基类就可以了
-class exception {
+#include <exception>
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+class Exception {
+public:
+  Exception(const char *str, int errid) : _errid(errid), _errmsg(str) {}
+  virtual string what() { return _errmsg; }
+
 protected:
   int _errid;     // 错误码
   string _errmsg; // 错误信息
-  // stack<string> _st} // 错误堆栈
 };
+
+class SqlException : public Exception {
+public:
+  SqlException(const char *str, int errid = 0) : Exception(str, errid) {}
+  string what() override { return "数据库错误: " + _errmsg; }
+};
+
+class Network : public Exception {
+public:
+  Network(const char *str, int errid = 0) : Exception(str, errid) {}
+  string what() override { return "网络错误: " + _errmsg; }
+};
+
+void ServerStart() {
+  int error_type = rand() % 3; // 随机生成 0, 1, 2
+  if (error_type == 0)
+    throw SqlException("数据库连接失败", 1001);
+  else if (error_type == 2)
+    throw Network("网络连接失败", 2001);
+  else
+    throw Exception("未知错误", 0);
+}
+
+int main() {
+  try {
+    ServerStart();
+  } catch (SqlException &e) {
+    cout << e.what() << endl;
+  } catch (Network &e) {
+    cout << e.what() << endl;
+  } catch (Exception &e) {
+    cout << e.what() << endl;
+  }
+  return 0;
+}
