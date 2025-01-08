@@ -3,6 +3,7 @@
 //
 #include <iostream>
 using namespace std;
+#include "SmartPtr.h"
 
 int div()
 {
@@ -18,17 +19,19 @@ int div()
 void f1()
 {
     int* p = new int;
-    try
-    {
-        cout << div() << endl;
-    }
-    catch (...)
-    {
-        delete p;
-        throw;
-    }
+    // try
+    // {
+    //     cout << div() << endl;
+    // }
+    // catch (...)
+    // {
+    //     delete p;
+    //     throw;
+    // }
     //... 捕捉任意异常
-    delete p;
+    // delete p;
+    SmartPtr<int> sp(p);
+    cout << div() << endl;
 };
 
 int main()

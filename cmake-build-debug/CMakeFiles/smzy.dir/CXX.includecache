@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_56_smart_pointer_1/SmartPtr.h
+iostream
+-
+
 C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_56_smart_pointer_1/test1.cpp
 iostream
 -
+SmartPtr.h
+C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_56_smart_pointer_1/SmartPtr.h
 
