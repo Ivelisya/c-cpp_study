@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_54_cpp11_4/test1.cpp" "C:/Users/20212/Desktop/Github/c-cpp_study/cmake-build-debug/CMakeFiles/smzy.dir/cpp_study/day_54_cpp11_4/test1.cpp.obj"
-  "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_55/c++11.cpp" "C:/Users/20212/Desktop/Github/c-cpp_study/cmake-build-debug/CMakeFiles/smzy.dir/cpp_study/day_55/c++11.cpp.obj"
-  "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_55/test1.cpp" "C:/Users/20212/Desktop/Github/c-cpp_study/cmake-build-debug/CMakeFiles/smzy.dir/cpp_study/day_55/test1.cpp.obj"
+  "C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_56_smart_pointer_1/test1.cpp" "C:/Users/20212/Desktop/Github/c-cpp_study/cmake-build-debug/CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

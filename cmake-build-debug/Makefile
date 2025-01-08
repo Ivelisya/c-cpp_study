@@ -128,77 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_54_cpp11_4/test1.obj: cpp_study/day_54_cpp11_4/test1.cpp.obj
-.PHONY : cpp_study/day_54_cpp11_4/test1.obj
+cpp_study/day_56_smart_pointer_1/test1.obj: cpp_study/day_56_smart_pointer_1/test1.cpp.obj
+.PHONY : cpp_study/day_56_smart_pointer_1/test1.obj
 
 # target to build an object file
-cpp_study/day_54_cpp11_4/test1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_54_cpp11_4/test1.cpp.obj
-.PHONY : cpp_study/day_54_cpp11_4/test1.cpp.obj
+cpp_study/day_56_smart_pointer_1/test1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj
+.PHONY : cpp_study/day_56_smart_pointer_1/test1.cpp.obj
 
-cpp_study/day_54_cpp11_4/test1.i: cpp_study/day_54_cpp11_4/test1.cpp.i
-.PHONY : cpp_study/day_54_cpp11_4/test1.i
-
-# target to preprocess a source file
-cpp_study/day_54_cpp11_4/test1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_54_cpp11_4/test1.cpp.i
-.PHONY : cpp_study/day_54_cpp11_4/test1.cpp.i
-
-cpp_study/day_54_cpp11_4/test1.s: cpp_study/day_54_cpp11_4/test1.cpp.s
-.PHONY : cpp_study/day_54_cpp11_4/test1.s
-
-# target to generate assembly for a file
-cpp_study/day_54_cpp11_4/test1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_54_cpp11_4/test1.cpp.s
-.PHONY : cpp_study/day_54_cpp11_4/test1.cpp.s
-
-cpp_study/day_55/c++11.obj: cpp_study/day_55/c++11.cpp.obj
-.PHONY : cpp_study/day_55/c++11.obj
-
-# target to build an object file
-cpp_study/day_55/c++11.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_55/c++11.cpp.obj
-.PHONY : cpp_study/day_55/c++11.cpp.obj
-
-cpp_study/day_55/c++11.i: cpp_study/day_55/c++11.cpp.i
-.PHONY : cpp_study/day_55/c++11.i
+cpp_study/day_56_smart_pointer_1/test1.i: cpp_study/day_56_smart_pointer_1/test1.cpp.i
+.PHONY : cpp_study/day_56_smart_pointer_1/test1.i
 
 # target to preprocess a source file
-cpp_study/day_55/c++11.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_55/c++11.cpp.i
-.PHONY : cpp_study/day_55/c++11.cpp.i
+cpp_study/day_56_smart_pointer_1/test1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.i
+.PHONY : cpp_study/day_56_smart_pointer_1/test1.cpp.i
 
-cpp_study/day_55/c++11.s: cpp_study/day_55/c++11.cpp.s
-.PHONY : cpp_study/day_55/c++11.s
-
-# target to generate assembly for a file
-cpp_study/day_55/c++11.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_55/c++11.cpp.s
-.PHONY : cpp_study/day_55/c++11.cpp.s
-
-cpp_study/day_55/test1.obj: cpp_study/day_55/test1.cpp.obj
-.PHONY : cpp_study/day_55/test1.obj
-
-# target to build an object file
-cpp_study/day_55/test1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_55/test1.cpp.obj
-.PHONY : cpp_study/day_55/test1.cpp.obj
-
-cpp_study/day_55/test1.i: cpp_study/day_55/test1.cpp.i
-.PHONY : cpp_study/day_55/test1.i
-
-# target to preprocess a source file
-cpp_study/day_55/test1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_55/test1.cpp.i
-.PHONY : cpp_study/day_55/test1.cpp.i
-
-cpp_study/day_55/test1.s: cpp_study/day_55/test1.cpp.s
-.PHONY : cpp_study/day_55/test1.s
+cpp_study/day_56_smart_pointer_1/test1.s: cpp_study/day_56_smart_pointer_1/test1.cpp.s
+.PHONY : cpp_study/day_56_smart_pointer_1/test1.s
 
 # target to generate assembly for a file
-cpp_study/day_55/test1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_55/test1.cpp.s
-.PHONY : cpp_study/day_55/test1.cpp.s
+cpp_study/day_56_smart_pointer_1/test1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.s
+.PHONY : cpp_study/day_56_smart_pointer_1/test1.cpp.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_54_cpp11_4/test1.obj
-	@echo ... cpp_study/day_54_cpp11_4/test1.i
-	@echo ... cpp_study/day_54_cpp11_4/test1.s
-	@echo ... cpp_study/day_55/c++11.obj
-	@echo ... cpp_study/day_55/c++11.i
-	@echo ... cpp_study/day_55/c++11.s
-	@echo ... cpp_study/day_55/test1.obj
-	@echo ... cpp_study/day_55/test1.i
-	@echo ... cpp_study/day_55/test1.s
+	@echo ... cpp_study/day_56_smart_pointer_1/test1.obj
+	@echo ... cpp_study/day_56_smart_pointer_1/test1.i
+	@echo ... cpp_study/day_56_smart_pointer_1/test1.s
 .PHONY : help
 
 

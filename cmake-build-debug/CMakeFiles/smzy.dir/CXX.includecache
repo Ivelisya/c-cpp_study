@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_54_cpp11_4/test1.cpp
-thread
--
+C:/Users/20212/Desktop/Github/c-cpp_study/cpp_study/day_56_smart_pointer_1/test1.cpp
 iostream
--
-mutex
--
-condition_variable
 -
 
