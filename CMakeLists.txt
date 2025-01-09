@@ -1,27 +1,27 @@
  cmake_minimum_required(VERSION 3.20)
 
- # ������Ŀ���Ʋ�ָ��ʹ�õ�����
+ # 设置项目名称并指定使用的语言
  project(smzy_study LANGUAGES C CXX)
 
- # ���� C �� C++ ��׼
+ # 设置 C 和 C++ 标准
  set(CMAKE_C_STANDARD 11)
  set(CMAKE_CXX_STANDARD 17)
 
- # ǿ��ʹ��ָ���ı�׼�����ñ�������չ����߿���ֲ��
+ # 强制使用指定的标准并禁用编译器扩展以提高可移植性
  set(CMAKE_C_STANDARD_REQUIRED ON)
 
  set(CMAKE_CXX_STANDARD_REQUIRED ON)
  set(CMAKE_C_EXTENSIONS OFF)
  set(CMAKE_CXX_EXTENSIONS OFF)
 
- # �����ִ��Ŀ��
+ # 定义可执行目标
  add_executable(smzy
          cpp_study/day_56_smart_pointer_1/test1.cpp
  )
- # ΪĿ�����ð���Ŀ¼
+ # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
- # ��ѡ��Ϊ��ߴ����������ӱ���������
+ # 可选：为提高代码质量添加编译器警告
  if (MSVC)
      target_compile_options(smzy PRIVATE /W4)
  else()
