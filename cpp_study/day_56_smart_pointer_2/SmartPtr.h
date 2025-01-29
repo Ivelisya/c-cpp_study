@@ -44,7 +44,7 @@ private:
     T* _ptr;
 };
 //引用计数使用指针 指针通过动态开辟
-
+//shared_ptr 缺陷问题 循环引用问题
 
 //shared_ptr 处理线程安全的问题
 
