@@ -8,6 +8,7 @@ void Swap(int *p1, int *p2);
 
 int GetMidIndex(int a[], int begin, int end);
 
+
 int PartSort3(int *a, int begin, int end);
 
 void QuickSortNonR(int *a, int left, int right);
