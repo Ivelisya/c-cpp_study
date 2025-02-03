@@ -18,6 +18,7 @@ void StackDestory(Stack *pst){
     pst -> _capacity = 0;
 }
 //插入和取出
+
 void StackPush(Stack* pst,STDataType x){
     assert(pst);
     //空间不够则增容
