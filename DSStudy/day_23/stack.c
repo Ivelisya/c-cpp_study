@@ -17,6 +17,7 @@ void StackDestory(Stack *pst){
     pst -> _top = 0;
     pst -> _capacity = 0;
 }
+
 //插入和取出
 
 void StackPush(Stack* pst,STDataType x){
