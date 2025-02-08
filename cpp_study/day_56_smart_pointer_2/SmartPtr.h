@@ -27,7 +27,7 @@ public:
     T* operator->() { return _ptr; }
 
     // 拷贝赋值运算符重载
-    SmartPtr& operator=(const SmartPtr& other)
+    SmartPtr& operator=(const SmartPtr& other)                                                                                                             
     {
         if (this != &other)
         {
@@ -41,7 +41,7 @@ public:
     }
 
 
-    
+
 private:
     T* _ptr;
 };
