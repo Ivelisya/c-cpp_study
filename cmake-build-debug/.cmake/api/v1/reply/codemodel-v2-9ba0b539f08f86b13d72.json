@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/20212/Desktop/Github/c-cpp_study/cmake-build-debug",
-		"source" : "C:/Users/20212/Desktop/Github/c-cpp_study"
+		"build" : "D:/Github/c-cpp_study/cmake-build-debug",
+		"source" : "D:/Github/c-cpp_study"
 	},
 	"version" : 
 	{

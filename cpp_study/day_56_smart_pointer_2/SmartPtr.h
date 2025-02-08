@@ -40,6 +40,8 @@ public:
         return *this;
     }
 
+
+    
 private:
     T* _ptr;
 };
