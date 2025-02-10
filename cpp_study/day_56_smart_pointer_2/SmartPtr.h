@@ -60,3 +60,4 @@ private:
 //    _weak_count = sp._weak_count;
 //    _weak_count++;
 //}
+//使用weak_ptr 弱引用不增加循环计数数目
