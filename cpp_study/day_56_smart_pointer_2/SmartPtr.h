@@ -51,4 +51,12 @@ private:
 //shared_ptr 处理线程安全的问题
 
 //c++当中的弱指针 专门用来处理循环引用问题
-//weak_ptr 不能直接访问资源 但是可以通过lock()函数来访问资源	
+//weak_ptr 不能直接访问资源 但是可以通过lock()函数来访问资源
+//template<class T>
+//class weak_ptr(shared_ptr<T>& sp)
+//{
+//    _ptr = sp._ptr;
+//    _count = sp._count;
+//    _weak_count = sp._weak_count;
+//    _weak_count++;
+//}
