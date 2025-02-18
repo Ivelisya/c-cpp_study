@@ -49,11 +49,11 @@ cmake_ninja_workdir = D$:/Github/c-cpp_study/cmake-build-debug/
 
 build cmake_object_order_depends_target_smzy: phony || .
 
-build CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj: CXX_COMPILER__smzy_unscanned_Debug D$:/Github/c-cpp_study/cpp_study/day_56_smart_pointer_1/test1.cpp || cmake_object_order_depends_target_smzy
-  DEP_FILE = CMakeFiles\smzy.dir\cpp_study\day_56_smart_pointer_1\test1.cpp.obj.d
+build CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test.cpp.obj: CXX_COMPILER__smzy_unscanned_Debug D$:/Github/c-cpp_study/cpp_study/day_58_smart_pointer_3/test.cpp || cmake_object_order_depends_target_smzy
+  DEP_FILE = CMakeFiles\smzy.dir\cpp_study\day_58_smart_pointer_3\test.cpp.obj.d
   FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wextra -pedantic
   OBJECT_DIR = CMakeFiles\smzy.dir
-  OBJECT_FILE_DIR = CMakeFiles\smzy.dir\cpp_study\day_56_smart_pointer_1
+  OBJECT_FILE_DIR = CMakeFiles\smzy.dir\cpp_study\day_58_smart_pointer_3
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj: CXX_CO
 #############################################
 # Link the executable smzy.exe
 
-build smzy.exe: CXX_EXECUTABLE_LINKER__smzy_Debug CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj
+build smzy.exe: CXX_EXECUTABLE_LINKER__smzy_Debug CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\smzy.dir

@@ -1,3 +1,5 @@
 # ninja log v6
-0	201	7614299554604357	build.ninja	b224bff2f9c6aec9
-325	387	7554817070323214	smzy.exe	ba976e4d2c58c5c9
+4	1987	7614361025595412	CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test.cpp.obj	11bab3286c1d23ff
+1	167	7614602033702220	build.ninja	3231092d001d2f5b
+2	53	7614361253098876	smzy.exe	b0eb9b7c3d007478
+0	1986	7614361025558372	CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj	de0ca12b88c4457e
