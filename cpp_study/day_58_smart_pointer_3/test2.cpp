@@ -24,7 +24,6 @@ private:
     Lock& _lock; //锁不能拷贝 定义引用成员变量
 };
 
-
 void f()
 {
     mutex mtx;
