@@ -19,6 +19,7 @@ public:
 
     LockGuard(const LockGuard<Lock>&) = delete; //禁止拷贝构造函数
     LockGuard& operator=(const LockGuard<Lock>&) = delete; //禁止赋值构造函数
+    
 private:
     Lock& _lock; //锁不能拷贝 定义引用成员变量
 };
