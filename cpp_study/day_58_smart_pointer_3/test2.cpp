@@ -34,7 +34,6 @@ void f()
     LockGuard<mutex> lock(mtx);  // 通过构造函数获取资源 通过析构函数释放资源 也就是智能指针的思想
 }
 int main()
-
 {
     try
     {
