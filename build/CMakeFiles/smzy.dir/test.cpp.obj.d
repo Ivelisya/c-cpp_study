@@ -1,14 +1,4 @@
-CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
- C:\Users\20212\Desktop\Github\c-cpp_study\cpp_study\day_52_cpp11_2\test.cpp \
- D:/mingw64/x86_64-w64-mingw32/include/string.h \
- D:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
- D:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
- D:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
- D:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
- D:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- D:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
- D:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- D:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+CMakeFiles/smzy.dir/test.cpp.obj: D:\Github\c-cpp_study\test.cpp \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iostream \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/requires_hosted.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -23,6 +13,12 @@ CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/postypes.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cwchar \
  D:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+ D:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+ D:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ D:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ D:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ D:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ D:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  D:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  D:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  D:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -37,6 +33,7 @@ CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_init_exception.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  D:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ D:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/typeinfo \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/hash_bytes.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/new \
@@ -56,19 +53,23 @@ CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/atomicity.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdlib.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdlib \
- D:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ D:/mingw64/x86_64-w64-mingw32/include/pthread.h \
+ D:/mingw64/x86_64-w64-mingw32/include/errno.h \
+ D:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+ D:/mingw64/x86_64-w64-mingw32/include/process.h \
+ D:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
  D:/mingw64/x86_64-w64-mingw32/include/limits.h \
- D:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- D:/mingw64/x86_64-w64-mingw32/include/malloc.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
- D:/mingw64/x86_64-w64-mingw32/include/errno.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_abs.h \
+ D:/mingw64/x86_64-w64-mingw32/include/signal.h \
+ D:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+ D:/mingw64/x86_64-w64-mingw32/include/time.h \
  D:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
  D:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ D:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ D:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+ D:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/locale_classes.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string \
@@ -108,6 +109,13 @@ CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/functional_hash.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/string_view.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/string_conversions.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdlib \
+ D:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ D:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdlib.h \
+ D:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_abs.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdio \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cerrno \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h \
@@ -134,22 +142,4 @@ CMakeFiles/smzy.dir/cpp_study/day_52_cpp11_2/test.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/istream \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/list \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_list.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/allocated_ptr.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ext/aligned_buffer.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/list.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/map \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_tree.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/node_handle.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_map.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_multimap.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/erase_if.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/vector \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_uninitialized.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_vector.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_bvector.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/vector.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/array \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/compare
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc

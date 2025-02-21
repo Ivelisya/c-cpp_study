@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = D:\cmake-3.31.5-windows-x86_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "D:\Program Files\CMake\bin\cmake.exe" -E rm -f
+RM = D:\cmake-3.31.5-windows-x86_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\20212\Desktop\Github\c-cpp_study
+CMAKE_SOURCE_DIR = D:\Github\c-cpp_study
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\20212\Desktop\Github\c-cpp_study\build
+CMAKE_BINARY_DIR = D:\Github\c-cpp_study\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\20212\Desktop\Github\c-cpp_study\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"D:\Program Files\CMake\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	D:\cmake-3.31.5-windows-x86_64\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	D:\cmake-3.31.5-windows-x86_64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20212\Desktop\Github\c-cpp_study\build\CMakeFiles C:\Users\20212\Desktop\Github\c-cpp_study\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Github\c-cpp_study\build\CMakeFiles D:\Github\c-cpp_study\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20212\Desktop\Github\c-cpp_study\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Github\c-cpp_study\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_56_smart_pointer_1/test1.obj: cpp_study/day_56_smart_pointer_1/test1.cpp.obj
-.PHONY : cpp_study/day_56_smart_pointer_1/test1.obj
+test.obj: test.cpp.obj
+.PHONY : test.obj
 
 # target to build an object file
-cpp_study/day_56_smart_pointer_1/test1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.obj
-.PHONY : cpp_study/day_56_smart_pointer_1/test1.cpp.obj
+test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/test.cpp.obj
+.PHONY : test.cpp.obj
 
-cpp_study/day_56_smart_pointer_1/test1.i: cpp_study/day_56_smart_pointer_1/test1.cpp.i
-.PHONY : cpp_study/day_56_smart_pointer_1/test1.i
+test.i: test.cpp.i
+.PHONY : test.i
 
 # target to preprocess a source file
-cpp_study/day_56_smart_pointer_1/test1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.i
-.PHONY : cpp_study/day_56_smart_pointer_1/test1.cpp.i
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-cpp_study/day_56_smart_pointer_1/test1.s: cpp_study/day_56_smart_pointer_1/test1.cpp.s
-.PHONY : cpp_study/day_56_smart_pointer_1/test1.s
+test.s: test.cpp.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-cpp_study/day_56_smart_pointer_1/test1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_56_smart_pointer_1/test1.cpp.s
-.PHONY : cpp_study/day_56_smart_pointer_1/test1.cpp.s
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_56_smart_pointer_1/test1.obj
-	@echo ... cpp_study/day_56_smart_pointer_1/test1.i
-	@echo ... cpp_study/day_56_smart_pointer_1/test1.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

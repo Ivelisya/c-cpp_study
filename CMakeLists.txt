@@ -16,10 +16,11 @@
 
  # 定义可执行目标
  add_executable(smzy
-         cpp_study/day_58_smart_pointer_3/test.cpp
+        # cpp_study/day_58_smart_pointer_3/test.cpp
+        test.cpp
  )
  # 为目标设置包含目录
- #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
+ #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include) 放置头文件
 
  # 可选：为提高代码质量添加编译器警告
  if (MSVC)

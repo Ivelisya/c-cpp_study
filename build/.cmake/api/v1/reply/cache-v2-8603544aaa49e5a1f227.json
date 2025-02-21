@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/20212/Desktop/Github/c-cpp_study/build"
+			"value" : "d:/Github/c-cpp_study/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/cmake.exe"
+			"value" : "D:/cmake-3.31.5-windows-x86_64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/cpack.exe"
+			"value" : "D:/cmake-3.31.5-windows-x86_64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/ctest.exe"
+			"value" : "D:/cmake-3.31.5-windows-x86_64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -459,7 +459,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/bin/cmake-gui.exe"
+			"value" : "D:/cmake-3.31.5-windows-x86_64/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/20212/Desktop/Github/c-cpp_study/build/CMakeFiles/pkgRedirects"
+			"value" : "D:/Github/c-cpp_study/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/20212/Desktop/Github/c-cpp_study"
+			"value" : "D:/Github/c-cpp_study"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1043,7 +1043,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Program Files/CMake/share/cmake-3.31"
+			"value" : "D:/cmake-3.31.5-windows-x86_64/share/cmake-3.31"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1331,7 +1331,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/20212/Desktop/Github/c-cpp_study/build"
+			"value" : "D:/Github/c-cpp_study/build"
 		},
 		{
 			"name" : "smzy_study_IS_TOP_LEVEL",
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/20212/Desktop/Github/c-cpp_study"
+			"value" : "D:/Github/c-cpp_study"
 		}
 	],
 	"kind" : "cache",
