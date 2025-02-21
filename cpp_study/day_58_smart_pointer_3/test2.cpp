@@ -13,15 +13,15 @@ template <class Lock>
 class LockGuard
 {
 public:
-    LockGuard(Lock& lock) : _lock(lock) { _lock.lock(); } //进作用域 加锁
+    LockGuard(Lock& lock) : _lock(lock) { _lock.lock(); } // 进作用域 加锁
 
-    ~LockGuard() { _lock.unlock(); } //出作用域 解锁
+    ~LockGuard() { _lock.unlock(); } // 出作用域 解锁
 
-    LockGuard(const LockGuard<Lock>&) = delete; //禁止拷贝构造函数
-    LockGuard& operator=(const LockGuard<Lock>&) = delete; //禁止赋值构造函数
-    
+    LockGuard(const LockGuard<Lock>&) = delete; // 禁止拷贝构造函数
+    LockGuard& operator=(const LockGuard<Lock>&) = delete; // 禁止赋值构造函数
+
 private:
-    Lock& _lock; //锁不能拷贝 定义引用成员变量
+    Lock& _lock; // 锁不能拷贝 定义引用成员变量
 };
 
 void f()
@@ -30,7 +30,7 @@ void f()
     // mtx.lock();
     // func();  // 有可能抛出异常
     // mtx.unlock();
-    LockGuard<mutex> lock(mtx);  // 通过构造函数获取资源 通过析构函数释放资源 也就是智能指针的思想
+    LockGuard<mutex> lock(mtx); // 通过构造函数获取资源 通过析构函数释放资源 也就是智能指针的思想
 }
 int main()
 {
@@ -45,3 +45,10 @@ int main()
     return 0;
 }
 // 导致死锁的原因是因为在mtx.lock()和mtx.unlock()之间调用了func()函数，而func()函数有可能抛出异常，导致mtx.unlock()没有被调用，从而导致死锁。
+
+
+// 一般程序碰到内存泄漏重启就可以了
+// 如何解决内存泄漏问题
+// 1.小心谨慎
+// 2.不好处理的地方多用智能指针去管理
+// 3.如果怀疑存在内存泄漏 可以使用内存泄漏工具去检测（事后查错)

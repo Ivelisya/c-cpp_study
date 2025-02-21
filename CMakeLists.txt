@@ -1,5 +1,5 @@
  cmake_minimum_required(VERSION 3.20)
-
+ set(CMAKE_UTF8_MODE 1)
  # 设置项目名称并指定使用的语言
  project(smzy_study LANGUAGES C CXX)
 
@@ -17,7 +17,8 @@
 
  # 定义可执行目标
  add_executable(smzy
-        cpp_study/day_58_smart_pointer_3/test2.cpp
+        # cpp_study/day_58_smart_pointer_3/test2.cpp
+         cpp_study/day_59_singleto_factory_pattern/heaponly.cpp
         # test.cpp
  )
  # 为目标设置包含目录

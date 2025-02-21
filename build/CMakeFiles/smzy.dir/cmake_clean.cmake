@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj"
-  "CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj.d"
+  "CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj"
+  "CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

@@ -71,28 +71,28 @@ include CMakeFiles/smzy.dir/flags.make
 CMakeFiles/smzy.dir/codegen:
 .PHONY : CMakeFiles/smzy.dir/codegen
 
-CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj: D:/Github/c-cpp_study/cpp_study/day_58_smart_pointer_3/test2.cpp
-CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Github\c-cpp_study\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_58_smart_pointer_3\test2.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_58_smart_pointer_3\test2.cpp.obj -c D:\Github\c-cpp_study\cpp_study\day_58_smart_pointer_3\test2.cpp
+CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj: D:/Github/c-cpp_study/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp
+CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Github\c-cpp_study\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp.obj -c D:\Github\c-cpp_study\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp
 
-CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.i"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Github\c-cpp_study\cpp_study\day_58_smart_pointer_3\test2.cpp > CMakeFiles\smzy.dir\cpp_study\day_58_smart_pointer_3\test2.cpp.i
+CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.i"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Github\c-cpp_study\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp > CMakeFiles\smzy.dir\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp.i
 
-CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.s"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Github\c-cpp_study\cpp_study\day_58_smart_pointer_3\test2.cpp -o CMakeFiles\smzy.dir\cpp_study\day_58_smart_pointer_3\test2.cpp.s
+CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.s"
+	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Github\c-cpp_study\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp -o CMakeFiles\smzy.dir\cpp_study\day_59_singleto_factory_pattern\heaponly.cpp.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj"
+"CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/heaponly.cpp.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp
