@@ -1,8 +1,8 @@
 [
 {
   "directory": "D:/Github/c-cpp_study/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\test.cpp.obj -c D:\\Github\\c-cpp_study\\test.cpp",
-  "file": "D:/Github/c-cpp_study/test.cpp",
-  "output": "CMakeFiles/smzy.dir/test.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe   -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_58_smart_pointer_3\\test2.cpp.obj -c D:\\Github\\c-cpp_study\\cpp_study\\day_58_smart_pointer_3\\test2.cpp",
+  "file": "D:/Github/c-cpp_study/cpp_study/day_58_smart_pointer_3/test2.cpp",
+  "output": "CMakeFiles/smzy.dir/cpp_study/day_58_smart_pointer_3/test2.cpp.obj"
 }
 ]

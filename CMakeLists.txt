@@ -10,14 +10,15 @@
  # 强制使用指定的标准并禁用编译器扩展以提高可移植性
  set(CMAKE_C_STANDARD_REQUIRED ON)
 
+
  set(CMAKE_CXX_STANDARD_REQUIRED ON)
  set(CMAKE_C_EXTENSIONS OFF)
  set(CMAKE_CXX_EXTENSIONS OFF)
 
  # 定义可执行目标
  add_executable(smzy
-        # cpp_study/day_58_smart_pointer_3/test.cpp
-        test.cpp
+        cpp_study/day_58_smart_pointer_3/test2.cpp
+        # test.cpp
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include) 放置头文件
