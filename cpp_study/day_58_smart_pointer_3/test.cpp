@@ -42,6 +42,5 @@ int main()
     // 4. 共享所有权示例
     auto sp4 = sp3;
     std::cout << "引用计数: " << sp3.use_count() << std::endl;
-
     return 0;
 }

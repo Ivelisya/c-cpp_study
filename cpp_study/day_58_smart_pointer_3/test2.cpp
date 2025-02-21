@@ -4,14 +4,35 @@
 #include <iostream>
 using namespace std;
 #include <mutex>
+// 使用raii思想解决死锁问题
+// raii 是内容是资源获取就是初始化
+// 资源释放就是析构
+// 通过构造函数获取资源 通过析构函数释放资源
+// 通过这种方式可以保证资源一定会被释放
+
+template <class Lock>
+class LockGuard
+{
+public:
+    LockGuard(Lock& lock) : _lock(lock) { _lock.lock(); } //进作用域 加锁
+
+    ~LockGuard() { _lock.unlock(); } //出作用域 解锁
+
+private:
+    Lock _lock;
+};
+
+
 void f()
 {
     mutex mtx;
-    mtx.lock();
+    // mtx.lock();
     // func();  // 有可能抛出异常
-    mtx.unlock();
+    // mtx.unlock();
+    LockGuard<mutex> lock(mtx);  // 通过构造函数获取资源 通过析构函数释放资源 也就是智能指针的思想
 }
 int main()
+
 {
     try
     {
