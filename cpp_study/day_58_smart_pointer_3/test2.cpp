@@ -19,7 +19,7 @@ public:
     ~LockGuard() { _lock.unlock(); } //出作用域 解锁
 
 private:
-    Lock _lock;
+    Lock& _lock; //锁不能拷贝
 };
 
 
