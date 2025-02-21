@@ -8,8 +8,7 @@ using namespace std;
 // raii 是内容是资源获取就是初始化
 // 资源释放就是析构
 // 通过构造函数获取资源 通过析构函数释放资源
-// 通过这种方式可以保证资源一定会被释放
-
+// 通过这种方式可以保证资源一定会被释
 template <class Lock>
 class LockGuard
 {
