@@ -10,7 +10,10 @@ public:
     }
 
 private:
-    HeapOnly(){};
+//c++98 防拷贝主要声明私有
+//c++11 防拷贝声明删除
+    HeapOnly() = default;
+    HeapOnly(const HeapOnly&) = delete;
 };
 
 int main(){
@@ -18,5 +21,6 @@ int main(){
     // HeapOnly* p = new HeapOnly;
     // HeapOnly* p = HeapOnly::GetObj();
     std::shared_ptr<HeapOnly> p(HeapOnly::GetObj());
+
     return 0;
 }
