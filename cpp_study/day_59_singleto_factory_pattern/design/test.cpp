@@ -19,6 +19,7 @@ public:
     static Singleton* GetInstance()
     {
         // 多线程下，可能会出现多个线程同时进入到这个函数中，导致多次创建对象
+        if(_pinst == nullptr)  //双检查
         {//添加一个局部作用域，让锁的生命周期更短   
             unique_lock<mutex> lock(_mutex);
             if (_pinst == nullptr)
@@ -26,7 +27,6 @@ public:
                 _pinst = new Singleton();
             }
         }
-
         return _pinst;
     }
     Singleton(const Singleton& s) = delete;
