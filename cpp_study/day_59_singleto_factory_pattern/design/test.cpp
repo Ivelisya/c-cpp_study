@@ -29,6 +29,11 @@ public:
         }
         return _pinst;
     }
+    static void DelInstance(){
+        unique_lock<mutex> lock(_mutex);
+        delete _pinst;
+        _pinst = nullptr;
+    }
     Singleton(const Singleton& s) = delete;
 
 private:
