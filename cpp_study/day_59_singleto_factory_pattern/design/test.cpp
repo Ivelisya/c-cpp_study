@@ -41,6 +41,17 @@ private:
     static Singleton* _pinst;
     static mutex _mutex;
 };
+//1.如果要手动释放单例对象，那么就需要在main函数中调用DelInstance
+//2.如果不手动释放，那么在进程结束的时候，会自动释放
+
+class GC{//除了作用域 自动调用析构函数
+    public:
+    ~GC(){
+        Singleton::DelInstance();
+    }
+};
+static GC gc;
+
 Singleton* Singleton::_pinst = nullptr;
 mutex Singleton::_mutex;
 int main()
