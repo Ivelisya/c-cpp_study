@@ -163,15 +163,18 @@ CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test.cpp.ob
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward/auto_ptr.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/pstl/glue_memory_defs.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/pstl/execution_defs.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/thread \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_thread.h \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/this_thread_sleep.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/mutex \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/chrono.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ratio \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdint \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/limits \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ctime \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/parse_numbers.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_mutex.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/unique_lock.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/thread \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_thread.h \
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/this_thread_sleep.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/vector \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_vector.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_bvector.h \

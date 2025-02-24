@@ -5,21 +5,28 @@
 // 还有一些常见的设计模式如:工厂模式，装饰器模式，观察者模式，单例模式
 #include <iostream>
 #include <memory>
-using namespace std;
+
 // 单例模式 在一个进程中 只能有一个实例对象 就叫做单例模式
 // 1.什么场景下使用 比如一个进程中有一个内存池
 // 类的名称是随着你的场景给的，比如你给的是内存池，那么你就定义成MemoryPool
+#include <mutex>
 #include <thread>
 #include <vector>
+using namespace std;
 class Singleton
 {
 public:
     static Singleton* GetInstance()
     {
-        if (_pinst == nullptr)
-        {
-            _pinst = new Singleton();
+        // 多线程下，可能会出现多个线程同时进入到这个函数中，导致多次创建对象
+        {//添加一个局部作用域，让锁的生命周期更短   
+            unique_lock<mutex> lock(_mutex);
+            if (_pinst == nullptr)
+            {
+                _pinst = new Singleton();
+            }
         }
+
         return _pinst;
     }
     Singleton(const Singleton& s) = delete;
@@ -27,8 +34,10 @@ public:
 private:
     Singleton() {}
     static Singleton* _pinst;
+    static mutex _mutex;
 };
 Singleton* Singleton::_pinst = nullptr;
+mutex Singleton::_mutex;
 int main()
 {
     vector<thread> vthreads;
