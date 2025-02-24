@@ -13,14 +13,15 @@
 #include <thread>
 #include <vector>
 using namespace std;
+// 懒汉模式
 class Singleton
 {
 public:
     static Singleton* GetInstance()
     {
         // 多线程下，可能会出现多个线程同时进入到这个函数中，导致多次创建对象
-        if(_pinst == nullptr)  //双检查
-        {//添加一个局部作用域，让锁的生命周期更短   
+        if (_pinst == nullptr) // 双检查
+        { // 添加一个局部作用域，让锁的生命周期更短
             unique_lock<mutex> lock(_mutex);
             if (_pinst == nullptr)
             {
@@ -29,7 +30,8 @@ public:
         }
         return _pinst;
     }
-    static void DelInstance(){
+    static void DelInstance()
+    {
         unique_lock<mutex> lock(_mutex);
         delete _pinst;
         _pinst = nullptr;
@@ -41,14 +43,13 @@ private:
     static Singleton* _pinst;
     static mutex _mutex;
 };
-//1.如果要手动释放单例对象，那么就需要在main函数中调用DelInstance
-//2.如果不手动释放，那么在进程结束的时候，会自动释放
+// 1.如果要手动释放单例对象，那么就需要在main函数中调用DelInstance
+// 2.如果不手动释放，那么在进程结束的时候，会自动释放
 
-class GC{//除了作用域 自动调用析构函数
-    public:
-    ~GC(){
-        Singleton::DelInstance();
-    }
+class GC
+{ // 除了作用域 自动调用析构函数
+public:
+    ~GC() { Singleton::DelInstance(); }
 };
 static GC gc;
 

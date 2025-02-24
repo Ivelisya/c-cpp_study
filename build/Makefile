@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_59_singleto_factory_pattern/design/test.obj: cpp_study/day_59_singleto_factory_pattern/design/test.cpp.obj
-.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test.obj
+cpp_study/day_59_singleto_factory_pattern/design/test2.obj: cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.obj
+.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test2.obj
 
 # target to build an object file
-cpp_study/day_59_singleto_factory_pattern/design/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test.cpp.obj
-.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test.cpp.obj
+cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.obj
+.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.obj
 
-cpp_study/day_59_singleto_factory_pattern/design/test.i: cpp_study/day_59_singleto_factory_pattern/design/test.cpp.i
-.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test.i
+cpp_study/day_59_singleto_factory_pattern/design/test2.i: cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.i
+.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test2.i
 
 # target to preprocess a source file
-cpp_study/day_59_singleto_factory_pattern/design/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test.cpp.i
-.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test.cpp.i
+cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.i
+.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.i
 
-cpp_study/day_59_singleto_factory_pattern/design/test.s: cpp_study/day_59_singleto_factory_pattern/design/test.cpp.s
-.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test.s
+cpp_study/day_59_singleto_factory_pattern/design/test2.s: cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.s
+.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test2.s
 
 # target to generate assembly for a file
-cpp_study/day_59_singleto_factory_pattern/design/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test.cpp.s
-.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test.cpp.s
+cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.s
+.PHONY : cpp_study/day_59_singleto_factory_pattern/design/test2.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_59_singleto_factory_pattern/design/test.obj
-	@echo ... cpp_study/day_59_singleto_factory_pattern/design/test.i
-	@echo ... cpp_study/day_59_singleto_factory_pattern/design/test.s
+	@echo ... cpp_study/day_59_singleto_factory_pattern/design/test2.obj
+	@echo ... cpp_study/day_59_singleto_factory_pattern/design/test2.i
+	@echo ... cpp_study/day_59_singleto_factory_pattern/design/test2.s
 .PHONY : help
 
 
