@@ -21,6 +21,5 @@ int main(){
     // HeapOnly* p = new HeapOnly;
     // HeapOnly* p = HeapOnly::GetObj();
     std::shared_ptr<HeapOnly> p(HeapOnly::GetObj());
-
     return 0;
 }
