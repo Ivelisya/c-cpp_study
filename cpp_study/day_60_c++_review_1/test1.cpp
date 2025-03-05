@@ -1,8 +1,8 @@
+#include <algorithm>
 #include <forward_list>
 #include <iostream>
 #include <list>
 #include <vector>
-#include <algorithm>
 // stl整体复习梳理
 // stl由六大组件构成
 // 容器 算法 迭代器 仿函数 适配器 空间配置器
@@ -38,6 +38,7 @@ int main()
 #endif
 // 迭代器按功能分类和算法之间的关系
 // 一个算法能不能处理一个容器的数据，就看这个算法的参数声明接受对象的名称
+#if 0
 int main(){
     vector<int> v1 = {1, 2, 3, 4, 5};
     list<int> l1 = {10, 20, 30, 40, 50};
@@ -46,5 +47,23 @@ int main(){
     reverse(l1.begin(), l1.end());
     // reverse(fl1.begin(), fl1.end()); // 不能使用reverse算法 因为forward_list只支持单向迭代器 而reverse需要双向迭代器 因为其中有++ --操作
 }
+#endif
+// 全排列算法 function template
+int main()
+{
+    vector<int> v1 = {5, 2, 1, 7, 4};
+    sort(v1.begin(), v1.end());
+    do
+    {
+        for (auto& e : v1)
+        {
+            cout << e << " ";
+        }
+        cout << endl;
+    }
+    while (next_permutation(v1.begin(), v1.end())); // 升序
+    // prev_permutation(v1.begin(), v1.end()); //降序
+    return 0;
+}
 
-//全排列算法 function template
+//string vector 的迭代器 本身也就是随机迭代器
