@@ -46,3 +46,5 @@ int main(){
     reverse(l1.begin(), l1.end());
     // reverse(fl1.begin(), fl1.end()); // 不能使用reverse算法 因为forward_list只支持单向迭代器 而reverse需要双向迭代器 因为其中有++ --操作
 }
+
+//全排列算法 function template
