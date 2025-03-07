@@ -1,8 +1,8 @@
 [
 {
   "directory": "D:/Github/c-cpp_study/build",
-  "command": "D:\\mingw64\\bin\\g++.exe   -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_59_singleto_factory_pattern\\design\\test3.cpp.obj -c D:\\Github\\c-cpp_study\\cpp_study\\day_59_singleto_factory_pattern\\design\\test3.cpp",
-  "file": "D:/Github/c-cpp_study/cpp_study/day_59_singleto_factory_pattern/design/test3.cpp",
-  "output": "CMakeFiles/smzy.dir/cpp_study/day_59_singleto_factory_pattern/design/test3.cpp.obj"
+  "command": "D:\\mingw64\\bin\\g++.exe   -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_61_c++_review_2\\test1.cpp.obj -c D:\\Github\\c-cpp_study\\cpp_study\\day_61_c++_review_2\\test1.cpp",
+  "file": "D:/Github/c-cpp_study/cpp_study/day_61_c++_review_2/test1.cpp",
+  "output": "CMakeFiles/smzy.dir/cpp_study/day_61_c++_review_2/test1.cpp.obj"
 }
 ]
