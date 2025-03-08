@@ -22,5 +22,6 @@ int main(){
     // printf("%d\n", sizeof(&arr));
     printf("%d\n", sizeof(&arr+1));
     printf("%d\n", sizeof(&arr[0]+1));
+    
     return 0;
 }
