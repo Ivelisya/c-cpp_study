@@ -1,7 +1,7 @@
 //
 #include <iostream>
-#include <set>
 #include <map>
+#include <set>
 #include <string>
 using namespace std;
 void test_set1()
@@ -13,7 +13,7 @@ void test_set1()
     s.insert(3);
     s.insert(7);
     s.insert(8);
-    // æ’åºï¼‹å»é‡
+    // ÅÅĞò£«È¥ÖØ
     set<int>::iterator it = s.begin();
     while (it != s.end())
     {
@@ -37,9 +37,9 @@ void test_set1()
     // cout << endl;
     // auto pos = s.find(3);
     set<int>::iterator pos = s.find(3);
-    // set æ˜¯ äºŒå‰æœç´¢æ ‘ O(logN)
-    // ç®—æ³• find O(N)
-    //  ä½¿ç”¨ç®—æ³• find å’Œä½¿ç”¨ set å†…ç½® find çš„åŒºåˆ«
+    // set ÊÇ ¶ş²æËÑË÷Ê÷ O(logN)
+    // Ëã·¨ find O(N)
+    //  Ê¹ÓÃËã·¨ find ºÍÊ¹ÓÃ set ÄÚÖÃ find µÄÇø±ğ
     s.erase(pos);
     for (auto e : s)
     {
@@ -47,8 +47,8 @@ void test_set1()
     }
     cout << endl;
 }
-// erase ä¼ å€¼ åº•å±‚å°±æ˜¯ç”±è¿­ä»£å™¨å®ç°
-// erase ä¼ è¿­ä»£å™¨å¯ä»¥åˆ¤æ–­æ˜¯å¦æ‰¾åˆ°äº†è¿™ä¸ªå€¼
+// erase ´«Öµ µ×²ã¾ÍÊÇÓÉµü´úÆ÷ÊµÏÖ
+// erase ´«µü´úÆ÷¿ÉÒÔÅĞ¶ÏÊÇ·ñÕÒµ½ÁËÕâ¸öÖµ
 
 void test_map1()
 {
@@ -57,8 +57,8 @@ void test_map1()
     m.insert(pair<int, int>(1, 1));
     m.insert(pair<int, int>(2, 2));
     m.insert(pair<int, int>(3, 3));
-    m.insert(make_pair(4, 4)); // å‡½æ•°æ¨¡æ¿æ„é€ ä¸€ä¸ªå¯¹è±¡
-    // å¤§å®¶éƒ½å–œæ¬¢ç”¨make_pairï¼Œå› ä¸ºæ˜¯ç”±ç¼–è¯‘å™¨è‡ªå·±æ¨æ¼”
+    m.insert(make_pair(4, 4)); // º¯ÊıÄ£°å¹¹ÔìÒ»¸ö¶ÔÏó
+    // ´ó¼Ò¶¼Ï²»¶ÓÃmake_pair£¬ÒòÎªÊÇÓÉ±àÒëÆ÷×Ô¼ºÍÆÑİ
 
     map<int, int>::iterator it = m.begin();
     while (it != m.end())
@@ -70,7 +70,7 @@ void test_map1()
     }
     cout << endl;
 
-    for (auto &e : m)
+    for (auto& e : m)
     {
         cout << e.first << ":" << e.second << " ";
     }
@@ -80,8 +80,8 @@ void test_map1()
 void test_map2()
 {
     std::map<std::string, std::string> dict;
-    dict.insert(pair<std::string, std::string>("sort", "æ’åº"));
-    dict.insert(make_pair("string", "æ’åº"));
+    dict.insert(pair<std::string, std::string>("sort", "ÅÅĞò"));
+    dict.insert(make_pair("string", "ÅÅĞò"));
 
     std::map<std::string, std::string>::iterator it = dict.begin();
     while (it != dict.end())
@@ -94,9 +94,9 @@ void test_map2()
 
 void test_map3()
 {
-    string strs[]{"è¥¿ç“œ", "è¥¿ç“œ", "è¥¿ç“œ", "è¥¿ç“œ", "è¥¿ç“œ", "è¥¿ç“œ", "è¥¿ç“œ"};
+    string strs[]{"Î÷¹Ï", "Î÷¹Ï", "Î÷¹Ï", "Î÷¹Ï", "Î÷¹Ï", "Î÷¹Ï", "Î÷¹Ï"};
     map<string, int> coutMap;
-    for (auto &str : strs)
+    for (auto& str : strs)
     {
         map<string, int>::iterator ret = coutMap.find(str);
         if (ret != coutMap.end())
@@ -109,7 +109,7 @@ void test_map3()
         }
     }
 
-    for (auto &e : coutMap)
+    for (auto& e : coutMap)
     {
         cout << e.first << " : " << e.second << " ";
     }
@@ -123,8 +123,8 @@ int main()
     test_map3();
 }
 
-// å¦‚æœæŠŠä¸­å›½æ‰€æœ‰äººçš„èº«ä»½å­˜å…¥setä¸­ï¼ŒæŸ¥æ‰¾ä¸€ä¸ªäººåœ¨ä¸åœ¨æœ€å¤š31æ¬¡
-// set ï¼š å¿«
+// Èç¹û°ÑÖĞ¹úËùÓĞÈËµÄÉí·İ´æÈësetÖĞ£¬²éÕÒÒ»¸öÈËÔÚ²»ÔÚ×î¶à31´Î
+// set £º ¿ì
 
-// å·¦å€¼ å¯å–åœ°å€çš„å¯¹è±¡ ä»£è¡¨ä¸€ä¸ªæŒä¹…å¯¹è±¡æˆ–å†…å­˜ä½ç½®
-// å³å€¼ ä¸´æ—¶å€¼
+// ×óÖµ ¿ÉÈ¡µØÖ·µÄ¶ÔÏó ´ú±íÒ»¸ö³Ö¾Ã¶ÔÏó»òÄÚ´æÎ»ÖÃ
+// ÓÒÖµ ÁÙÊ±Öµ
